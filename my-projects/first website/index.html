@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baloch Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">FoodHub</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">FOODS</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Public Restaurant</h1>
+    <h3>Authentic Flavors of Turbat</h3>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to Baloch Restaurant, where we serve the most authentic and delicious Balochi cuisine in Turbat. 
+      Owned by Dadshah Barkat, our restaurant is a celebration of traditional flavors and warm hospitality. 
+      We tell our story through food that is unique, flavorful, and connects with our customers.
+    </p>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="Spicy Chicken Biryani.jpg" alt="Biryani">
+        <p>Spicy Chicken Biryani</p>
+      </div>
+      <div class="menu-item">
+        <img src="Beef Burger.jpg" alt="Beef Burger">
+        <p>Beef Burger</p>
+      </div>
+      <div class="menu-item">
+        <img src="Grilled Chicken.jpg" alt="Grilled Chicken">
+        <p>Grilled Chicken</p>
+      </div>
+      <div class="menu-item">
+        <img src="Cheese Pizza.jpg" alt="Cheese Pizza">
+        <p>Cheese Pizza</p>
+      </div>
+      <div class="menu-item">
+        <img src="Fresh Garden Salad.jpg" alt="Salad">
+        <p>Fresh Garden Salad</p>
+      </div>
+      <div class="menu-item">
+        <img src="Chocolate Dessert.jpg" alt="Dessert">
+        <p>Chocolate Dessert</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form -->
+  <section class="order">
+    <h2>Order Online</h2>
+    <form onsubmit="return order();">
+      <input type="text" id="user" placeholder="Your Name" required>
+      <input type="number" id="number" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Select Item</option>
+        <option>Spicy Chicken Biryani</option>
+        <option>Beef Burger</option>
+        <option>Grilled Chicken</option>
+        <option>Fresh Garden Salad</option>
+        <option>Cheese Pizza</option>
+        <option>Chocolate Dessert</option>
+      </select>
+      <textarea id="area" placeholder="Additional Instructions"></textarea>
+      <button type="submit">Order Now</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Address: Main Road, Turbat, Pakistan <br>
+      Email: contact@balochrestaurant.com <br>
+      Phone: +92-300-1234567
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Baloch Restaurant | Owned by Dadshah Barkat</p>
+  </footer>
+
+  <script>
+    // Mobile Menu
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+    toggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

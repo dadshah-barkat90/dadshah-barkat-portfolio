@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Tech Academy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="site-header">
+<div class="container nav">
+<a href="index.html" class="logo">Tech<span>Academy</span></a>
+<nav id="navMenu" class="nav-menu">
+<a href="index.html" class="active">Home</a>
+<a href="about.html">About</a>
+<a href="courses.html">Courses</a>
+<a href="contact.html">Contact</a>
+</nav>
+<button id="menuToggle" class="menu-toggle" aria-label="Open Menu" aria-expanded="false">☰</button>
+</div>
+</header>
+
+  <!-- Courses Hero -->
+  <section class="hero small-hero">
+    <h1>Our Courses</h1>
+    <p>Browse through our wide range of courses and start learning today.</p>
+  </section>
+
+  <!-- Search and Filter -->
+  <section class="course-filter">
+    <input type="text" id="searchInput" placeholder="Search for a course...">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="web">Web Development</option>
+      <option value="data">Data Science</option>
+      <option value="ai">Artificial Intelligence</option>
+      <option value="cloud">Cloud Computing</option>
+    </select>
+  </section>
+
+  <!-- Courses List -->
+  <section class="courses" id="coursesList">
+    <div class="course-card" data-category="web">
+      <h3>HTML & CSS Fundamentals</h3>
+      <p>Learn the basics of web structure and styling.</p>
+    </div>
+    <div class="course-card" data-category="web">
+      <h3>JavaScript Essentials</h3>
+      <p>Master the fundamentals of JavaScript for web apps.</p>
+    </div>
+    <div class="course-card" data-category="data">
+      <h3>Data Science with Python</h3>
+      <p>Analyze and visualize data using Python.</p>
+    </div>
+    <div class="course-card" data-category="ai">
+      <h3>Introduction to Machine Learning</h3>
+      <p>Understand ML algorithms and build models.</p>
+    </div>
+    <div class="course-card" data-category="cloud">
+      <h3>Cloud Computing Basics</h3>
+      <p>Get started with AWS, Azure, and Google Cloud.</p>
+    </div>
+    <div class="course-card" data-category="data">
+      <h3>SQL for Beginners</h3>
+      <p>Learn database queries and management with SQL.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Plans -->
+  <section class="pricing">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Free</h3>
+        <p>Access to selected free courses.</p>
+        <span class="price">$0</span>
+      </div>
+      <div class="price-card">
+        <h3>Standard</h3>
+        <p>Access to all basic courses + certificate.</p>
+        <span class="price">$49/month</span>
+      </div>
+      <div class="price-card">
+        <h3>Premium</h3>
+        <p>All courses, mentorship, and career guidance.</p>
+        <span class="price">$99/month</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>EduSite</h3>
+      <p>Your trusted platform for learning and growth. Explore courses, connect with experts, and achieve your goals.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: support@edusite.com</p>
+      <p>Phone: +123 456 789</p>
+      <p>Location: Karachi, Pakistan</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> EduSite. All rights reserved.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+

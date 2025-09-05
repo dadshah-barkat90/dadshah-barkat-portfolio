@@ -1,0 +1,156 @@
+/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fdfdfd;
+  color: #222;
+  line-height: 1.6;
+}
+h1, h2, h3 { font-weight: 600; color: #111; }
+.subtitle { color: #666; margin-top: 5px; }
+
+/* Header */
+header {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #0077b5;
+    }
+
+    /* Toggle button */
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: #333;
+      user-select: none;
+    }
+
+/* Hero */
+.hero {
+  display: flex; flex-wrap: wrap;
+  justify-content: center; align-items: center;
+  padding: 80px 10%;
+  background: #f7f9fc;
+}
+.hero-text { flex: 1; min-width: 300px; }
+.hero-text h1 { font-size: 40px; }
+.hero-text span { color: #0077b5; }
+.hero-text p { margin: 15px 0; font-size: 18px; }
+.buttons { margin: 20px 0; }
+.btn {
+  display: inline-block; padding: 10px 20px; border-radius: 25px;
+  text-decoration: none; font-size: 15px; transition: 0.3s;
+}
+.primary { background: #0077b5; color: white; }
+.primary:hover { background: #005f8d; }
+.secondary { border: 2px solid #0077b5; color: #0077b5; }
+.secondary:hover { background: #0077b5; color: white; }
+.socials a { font-size: 22px; margin-right: 12px; color: #333; }
+.socials a:hover { color: #0077b5; }
+.hero-img img { max-width: 280px; border-radius: 20%; }
+
+/* About */
+.about { padding: 80px 10%; text-align: center; }
+.about-content { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; }
+.cards { display: flex; flex-direction: column; gap: 20px; }
+.card {
+  background: white; padding: 25px; border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 250px;
+}
+.card i { font-size: 28px; margin-bottom: 10px; color: #0077b5; }
+.about-img img { width: 260px; border-radius: 15px; }
+
+/* Experience */
+.experience { padding: 80px 10%; background: #f7f9fc; text-align: center; }
+.experience-container { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 30px; }
+.box {
+  background: white; padding: 25px; border-radius: 15px; width: 280px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.box ul { list-style: none; margin-top: 10px; }
+.box li { margin: 8px 0; color: #444; }
+
+/* Projects */
+.projects { padding: 80px 10%; text-align: center; }
+.projects-container { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; margin-top: 40px; }
+.project-card {
+  background: white; border-radius: 15px; padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); width: 300px;
+}
+.project-card img { width: 100%; border-radius: 15px; }
+.project-buttons { margin-top: 15px; }
+
+/* Contact */
+.contact { padding: 80px 10%; background: #f7f9fc; text-align: center; }
+.contact-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 25px; }
+
+/* Footer */
+footer { background: #111; color: white; padding: 30px; text-align: center; }
+footer ul { list-style: none; display: flex; justify-content: center; gap: 20px; margin-bottom: 15px; }
+footer a { color: white; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero { flex-direction: column; text-align: center; }
+  .about-content { flex-direction: column; align-items: center; }
+  .experience-container, .projects-container { flex-direction: column; }
+}
+@media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 65px;
+        right: 10%;
+        width: 200px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      /* Change ☰ to X when active */
+      .menu-toggle.active::before {
+        content: "✖";
+      }
+    }
