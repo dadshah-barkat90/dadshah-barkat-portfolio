@@ -77,7 +77,7 @@ header {
 .secondary:hover { background: #0077b5; color: white; }
 .socials a { font-size: 22px; margin-right: 12px; color: #333; }
 .socials a:hover { color: #0077b5; }
-.hero-img img { max-width: 280px; border-radius: 20%; }
+.hero-img img { max-width: 280px; border-radius: 5%; }
 
 /* About */
 .about { padding: 80px 10%; text-align: center; }
